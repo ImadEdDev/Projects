@@ -1,0 +1,2544 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook original-version='18.1' source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+        <calculation class='tableau' formula='#2020-09-04#' />
+      </column>
+      <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+        <calculation class='tableau' formula='#2021-10-25#' />
+      </column>
+    </datasource>
+    <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' inline='true' name='federated.10x6of515xv8o71f4pu5p0mn662t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='textscan.0myo53i0tccuyq1cwaggx0ecdixc'>
+            <connection class='textscan' directory='C:/Users/imade/Desktop/Job prep/Github projects/Covid Vaccination Tracker/Data' filename='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0myo53i0tccuyq1cwaggx0ecdixc' name='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' table='[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data#csv]' type='table'>
+          <columns character-set='UTF-16LE' header='yes' locale='en_GB' separator='&#9;'>
+            <column datatype='string' name='Continent' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='boolean' name='Date Range Selected' ordinal='2' />
+            <column datatype='string' name='Excess Mortality' ordinal='3' />
+            <column datatype='string' name='Excess Mortality Cumulative' ordinal='4' />
+            <column datatype='string' name='Excess Mortality Cumulative Absolute' ordinal='5' />
+            <column datatype='string' name='Excess Mortality Cumulative Per Million' ordinal='6' />
+            <column datatype='string' name='Extreme Poverty' ordinal='7' />
+            <column datatype='string' name='Female Smokers' ordinal='8' />
+            <column datatype='string' name='Hosp Patients' ordinal='9' />
+            <column datatype='string' name='Hosp Patients Per Million' ordinal='10' />
+            <column datatype='string' name='Icu Patients' ordinal='11' />
+            <column datatype='string' name='Icu Patients Per Million' ordinal='12' />
+            <column datatype='string' name='Iso Code' ordinal='13' />
+            <column datatype='string' name='Location' ordinal='14' />
+            <column datatype='string' name='Location (copy)' ordinal='15' />
+            <column datatype='string' name='Location (geo)' ordinal='16' />
+            <column datatype='string' name='Male Smokers' ordinal='17' />
+            <column datatype='string' name='New Tests' ordinal='18' />
+            <column datatype='string' name='New Tests Per Thousand' ordinal='19' />
+            <column datatype='string' name='New Tests Smoothed' ordinal='20' />
+            <column datatype='string' name='New Tests Smoothed Per Thousand' ordinal='21' />
+            <column datatype='string' name='Positive Rate' ordinal='22' />
+            <column datatype='string' name='Tests Per Case' ordinal='23' />
+            <column datatype='string' name='Tests Units' ordinal='24' />
+            <column datatype='string' name='Total Tests' ordinal='25' />
+            <column datatype='string' name='Total Tests Per Thousand' ordinal='26' />
+            <column datatype='string' name='Weekly Hosp Admissions' ordinal='27' />
+            <column datatype='string' name='Weekly Hosp Admissions Per Million' ordinal='28' />
+            <column datatype='string' name='Weekly Icu Admissions' ordinal='29' />
+            <column datatype='string' name='Weekly Icu Admissions Per Million' ordinal='30' />
+            <column datatype='real' name='Aged 65 Older' ordinal='31' />
+            <column datatype='real' name='Aged 70 Older' ordinal='32' />
+            <column datatype='real' name='Cardiovasc Death Rate' ordinal='33' />
+            <column datatype='real' name='Diabetes Prevalence' ordinal='34' />
+            <column datatype='real' name='Fully Vaccinated over Population' ordinal='35' />
+            <column datatype='real' name='Gdp Per Capita' ordinal='36' />
+            <column datatype='real' name='Handwashing Facilities' ordinal='37' />
+            <column datatype='real' name='Hospital Beds Per Thousand' ordinal='38' />
+            <column datatype='real' name='Human Development Index' ordinal='39' />
+            <column datatype='real' name='Life Expectancy' ordinal='40' />
+            <column datatype='real' name='Median Age' ordinal='41' />
+            <column datatype='integer' name='New Cases' ordinal='42' />
+            <column datatype='real' name='New Cases Per Million' ordinal='43' />
+            <column datatype='real' name='New Cases Smoothed' ordinal='44' />
+            <column datatype='real' name='New Cases Smoothed Per Million' ordinal='45' />
+            <column datatype='integer' name='New Deaths' ordinal='46' />
+            <column datatype='real' name='New Deaths Per Million' ordinal='47' />
+            <column datatype='real' name='New Deaths Smoothed' ordinal='48' />
+            <column datatype='real' name='New Deaths Smoothed Per Million' ordinal='49' />
+            <column datatype='integer' name='New Vaccinations' ordinal='50' />
+            <column datatype='real' name='New Vaccinations over Population' ordinal='51' />
+            <column datatype='integer' name='New Vaccinations Smoothed' ordinal='52' />
+            <column datatype='integer' name='New Vaccinations Smoothed Per Million' ordinal='53' />
+            <column datatype='real' name='Not Vaccinated over Population ' ordinal='54' />
+            <column datatype='integer' name='People Fully Vaccinated' ordinal='55' />
+            <column datatype='real' name='People Fully Vaccinated Per Hundred' ordinal='56' />
+            <column datatype='integer' name='People Vaccinated' ordinal='57' />
+            <column datatype='real' name='People Vaccinated over Population (delta)' ordinal='58' />
+            <column datatype='real' name='People Vaccinated Per Hundred' ordinal='59' />
+            <column datatype='integer' name='Population' ordinal='60' />
+            <column datatype='real' name='Population Density' ordinal='61' />
+            <column datatype='real' name='Reproduction Rate' ordinal='62' />
+            <column datatype='real' name='Stringency Index' ordinal='63' />
+            <column datatype='integer' name='Total Boosters' ordinal='64' />
+            <column datatype='real' name='Total Boosters Per Hundred' ordinal='65' />
+            <column datatype='integer' name='Total Cases' ordinal='66' />
+            <column datatype='real' name='Total Cases Per Million' ordinal='67' />
+            <column datatype='integer' name='Total Deaths' ordinal='68' />
+            <column datatype='real' name='Total Deaths Per Million' ordinal='69' />
+            <column datatype='integer' name='Total Vaccinations' ordinal='70' />
+            <column datatype='real' name='Total Vaccinations Per Hundred' ordinal='71' />
+            <column datatype='real' name='Vaccinated over Population' ordinal='72' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-16LE&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Range Selected</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Date Range Selected]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Date Range Selected</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative Absolute</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative Absolute]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative Absolute</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative Per Million</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extreme Poverty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Extreme Poverty]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Extreme Poverty</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female Smokers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Female Smokers]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Female Smokers</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hosp Patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hosp Patients]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hosp Patients</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hosp Patients Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hosp Patients Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hosp Patients Per Million</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Icu Patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Icu Patients]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Icu Patients</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Icu Patients Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Icu Patients Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Icu Patients Per Million</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Iso Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Iso Code]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Iso Code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location (copy)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location (copy)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location (copy)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location (geo)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location (geo)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location (geo)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male Smokers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Male Smokers]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Male Smokers</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Per Thousand</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Smoothed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Smoothed</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Smoothed Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Smoothed Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Smoothed Per Thousand</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positive Rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Positive Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Positive Rate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tests Per Case</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tests Per Case]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Tests Per Case</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tests Units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tests Units]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Tests Units</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Tests]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Tests</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Tests Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Tests Per Thousand</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Hosp Admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Hosp Admissions]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Hosp Admissions</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Hosp Admissions Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Hosp Admissions Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Hosp Admissions Per Million</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Icu Admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Icu Admissions]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Icu Admissions</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Icu Admissions Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Icu Admissions Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Icu Admissions Per Million</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aged 65 Older</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aged 65 Older]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Aged 65 Older</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aged 70 Older</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aged 70 Older]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Aged 70 Older</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cardiovasc Death Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cardiovasc Death Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Cardiovasc Death Rate</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes Prevalence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Diabetes Prevalence]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Diabetes Prevalence</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fully Vaccinated over Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fully Vaccinated over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Fully Vaccinated over Population</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gdp Per Capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gdp Per Capita]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Gdp Per Capita</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Handwashing Facilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Handwashing Facilities]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Handwashing Facilities</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital Beds Per Thousand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospital Beds Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hospital Beds Per Thousand</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human Development Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Human Development Index]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Human Development Index</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life Expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Life Expectancy]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Life Expectancy</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median Age]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Median Age</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Cases]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Cases Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Per Million</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Smoothed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Cases Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Smoothed</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Smoothed Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Cases Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Smoothed Per Million</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Deaths]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Deaths Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Per Million</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Smoothed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Deaths Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Smoothed</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Smoothed Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Deaths Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Smoothed Per Million</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations over Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Vaccinations over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations over Population</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations Smoothed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations Smoothed</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations Smoothed Per Million</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations Smoothed Per Million</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not Vaccinated over Population </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Not Vaccinated over Population ]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Not Vaccinated over Population </remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Fully Vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[People Fully Vaccinated]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Fully Vaccinated</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Fully Vaccinated Per Hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[People Fully Vaccinated Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Fully Vaccinated Per Hundred</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[People Vaccinated]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated over Population (delta)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[People Vaccinated over Population (delta)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated over Population (delta)</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated Per Hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[People Vaccinated Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated Per Hundred</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population Density]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Population Density</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reproduction Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Reproduction Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Reproduction Rate</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stringency Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Stringency Index]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Stringency Index</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Boosters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Boosters]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Boosters</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Boosters Per Hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Boosters Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Boosters Per Hundred</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Cases]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Cases</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Cases Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Cases Per Million</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths Per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Deaths Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Deaths Per Million</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Vaccinations]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Vaccinations</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Vaccinations Per Hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Vaccinations Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Vaccinations Per Hundred</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vaccinated over Population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vaccinated over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Vaccinated over Population</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+      </column>
+      <column caption='Share of Partially Vaccinated People' datatype='real' name='[Calculation_2431662392493182976]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([People Vaccinated])/ MAX([Population])' />
+      </column>
+      <column caption='The share of people that are not vaccinated' datatype='real' name='[Calculation_2431662392494813185]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1- [Calculation_2431662392493182976]' />
+      </column>
+      <column datatype='string' name='[Location (geo)]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Not Vaccinated over Population' datatype='real' name='[Not Vaccinated over Population ]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Share of Fully Vaccinated People (copy)' datatype='real' name='[Share of Partially Vaccinated People (copy)_2431943799106277376]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([People Fully Vaccinated])/ MAX([Population])' />
+      </column>
+      <column-instance column='[Calculation_2431662392493182976]' derivation='User' name='[diff:usr:Calculation_2431662392493182976:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_2431662392493182976]' derivation='User' name='[usr:Calculation_2431662392493182976:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Share of Partially Vaccinated People (copy)_2431943799106277376]' derivation='User' name='[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.466905' measure-ordering='alphabetic' measure-percentage='0.494633' parameter-percentage='0.0384615' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10x6of515xv8o71f4pu5p0mn662t].[diff:usr:Calculation_2431662392493182976:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+          <calculation class='tableau' formula='#2020-09-04#' />
+        </column>
+        <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+          <calculation class='tableau' formula='#2021-10-25#' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.10x6of515xv8o71f4pu5p0mn662t'>
+      <datasources>
+        <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+      </datasources>
+      <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+        <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+        </column>
+        <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+        <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]'>
+        <groupfilter function='member' level='[none:Calculation_1769633179274764288:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]'>
+        <groupfilter from='&quot;Africa&quot;' function='range' level='[none:Continent:nk]' to='&quot;South America&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]'>
+        <groupfilter from='&quot;Afghanistan&quot;' function='range' level='[none:Location (copy):nk]' to='&quot;Zimbabwe&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='KPI 1 People Fully Vaccinated'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>KPI 1 Number of People Fully Vaccinated</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[People Fully Vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[People Fully Vaccinated]' derivation='Max' name='[max:People Fully Vaccinated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Parameters].[Parameter 2]' />
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Fully Vaccinated:qk]' />
+              <lod column='[Parameters].[Parameter 2]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Fully Vaccinated:qk]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{06D355F3-CA22-4C8E-9B20-5ECB9314718D}' />
+    </worksheet>
+    <worksheet name='KPI 2 People Partially Vaccinated (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>KPI 1 Number of People Partially Vaccinated</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[People Vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[People Vaccinated]' derivation='Max' name='[max:People Vaccinated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#4e79a7' fontsize='22'>&lt;</run>
+                <run fontcolor='#4e79a7' fontsize='22'>[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated:qk]</run>
+                <run fontcolor='#4e79a7' fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{33BBBCB2-27B7-47EC-BB3E-642068BA516C}' />
+    </worksheet>
+    <worksheet name='KPI 3 Share of people Vaccinated Wordwide'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>KPI 3 Share of people Vaccinated Wordwide</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column caption='Share of Partially Vaccinated People' datatype='real' name='[Calculation_2431662392493182976]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([People Vaccinated])/ MAX([Population])' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[People Vaccinated]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2431662392493182976]' derivation='User' name='[usr:Calculation_2431662392493182976:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#4e79a7' fontsize='22'>&lt;</run>
+                <run fontcolor='#4e79a7' fontsize='22'>[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]</run>
+                <run fontcolor='#4e79a7' fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB8A79CF-5D46-4E4E-BB1C-38284BCDCE3B}' />
+    </worksheet>
+    <worksheet name='Vacc vs Fully Vacc per Location'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column caption='Share of Partially Vaccinated People' datatype='real' name='[Calculation_2431662392493182976]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([People Vaccinated])/ MAX([Population])' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[People Fully Vaccinated]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[People Vaccinated]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column caption='Share of Fully Vaccinated People (copy)' datatype='real' name='[Share of Partially Vaccinated People (copy)_2431943799106277376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([People Fully Vaccinated])/ MAX([Population])' />
+            </column>
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2431662392493182976]' derivation='User' name='[usr:Calculation_2431662392493182976:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Share of Partially Vaccinated People (copy)_2431943799106277376]' derivation='User' name='[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]&quot;</bucket>
+              <bucket>&quot;[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Location:nk]' />
+              <groupfilter function='member' level='[none:Location:nk]' member='&quot;Gibraltar&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='height' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' value='60' />
+            <format attr='height' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' value='60' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' />
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' />
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]</rows>
+        <cols>([federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Calculation_2431662392493182976:qk] + [federated.10x6of515xv8o71f4pu5p0mn662t].[usr:Share of Partially Vaccinated People (copy)_2431943799106277376:qk])</cols>
+      </table>
+      <simple-id uuid='{C7C38ECA-6195-4497-AB43-58A983E26347}' />
+    </worksheet>
+    <worksheet name='Vaccinated over GDP'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Gdp Per Capita]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='real' name='[People Vaccinated Per Hundred]' role='measure' type='quantitative' />
+            <column-instance column='[Gdp Per Capita]' derivation='Max' name='[max:Gdp Per Capita:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[People Vaccinated Per Hundred]' derivation='Max' name='[max:People Vaccinated Per Hundred:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[max:Gdp Per Capita:qk]' field-type='quantitative' max='150000.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]' />
+              <lod column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='log' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated Per Hundred:qk]</rows>
+        <cols>[federated.10x6of515xv8o71f4pu5p0mn662t].[max:Gdp Per Capita:qk]</cols>
+      </table>
+      <simple-id uuid='{B9517170-CE18-4945-9C8F-6A454F206E63}' />
+    </worksheet>
+    <worksheet name='Vaccination per Hundred - Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.10x6of515xv8o71f4pu5p0mn662t' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Start Date' datatype='date' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='#2020-09-04#'>
+              <calculation class='tableau' formula='#2020-09-04#' />
+            </column>
+            <column caption='Select End Date' datatype='date' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='#2021-10-25#'>
+              <calculation class='tableau' formula='#2021-10-25#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.10x6of515xv8o71f4pu5p0mn662t'>
+            <column caption='Filter Selected Data' datatype='boolean' name='[Calculation_1769633179274764288]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Date &gt;= [Parameters].[Parameter 1] AND [Date] &lt;= [Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='string' name='[Continent]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location (copy)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Location (geo)]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[People Vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[People Vaccinated]' derivation='Max' name='[max:People Vaccinated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1769633179274764288]' derivation='None' name='[none:Calculation_1769633179274764288:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (copy)]' derivation='None' name='[none:Location (copy):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location (geo)]' derivation='None' name='[none:Location (geo):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</column>
+            <column>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[Longitude (generated)]' field-type='quantitative' max='27478291.275198035' min='-19685280.605102986' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.10x6of515xv8o71f4pu5p0mn662t].[Latitude (generated)]' field-type='quantitative' max='10566309.386847798' min='4225862.0435198583' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated:qk]' />
+              <lod column='[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (geo):nk]' />
+              <geometry column='[federated.10x6of515xv8o71f4pu5p0mn662t].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10x6of515xv8o71f4pu5p0mn662t].[Latitude (generated)]</rows>
+        <cols>[federated.10x6of515xv8o71f4pu5p0mn662t].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{87CA5559-2AD1-4486-BD61-67CF39483895}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Serif' fontsize='22'>COVID-19 Global Vaccine Tracker</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1200' maxwidth='2000' minheight='1200' minwidth='2000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98666' id='24' param='vert' type='layout-flow' w='99200' x='400' y='667'>
+            <zone fixed-size='85' h='7750' id='25' is-fixed='true' type='title' w='99200' x='400' y='667'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#0b4ea5' />
+              </zone-style>
+            </zone>
+            <zone h='90916' id='7' param='horz' type='layout-flow' w='99200' x='400' y='8417'>
+              <zone h='90916' id='5' type='layout-basic' w='91200' x='400' y='8417'>
+                <zone h='33249' id='3' name='Vacc vs Fully Vacc per Location' w='91200' x='400' y='20625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='22728' id='9' name='Vaccination per Hundred - Map' w='91200' x='400' y='53874'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='22731' id='11' name='Vaccinated over GDP' w='91200' x='400' y='76602'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='12208' id='12' name='KPI 1 People Fully Vaccinated' w='32899' x='400' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='12208' id='14' name='KPI 2 People Partially Vaccinated (2)' w='29150' x='33299' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='12208' id='22' name='KPI 3 Share of people Vaccinated Wordwide' w='29151' x='62449' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='90916' id='6' is-fixed='true' param='vert' type='layout-flow' w='8000' x='91600' y='8417'>
+                <zone h='5500' id='8' name='Vacc vs Fully Vacc per Location' pane-specification-id='1' param='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' type='color' w='8000' x='91600' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Serif' fontsize='22'>COVID-19 Global Vaccine Tracker</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='30' param='vert' type='layout-flow' w='99200' x='400' y='667'>
+                <zone fixed-size='85' h='7750' id='25' type='title' w='99200' x='400' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#0b4ea5' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='12208' id='12' is-fixed='true' name='KPI 1 People Fully Vaccinated' w='32899' x='400' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='12208' id='14' is-fixed='true' name='KPI 2 People Partially Vaccinated (2)' w='29150' x='33299' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='12208' id='22' is-fixed='true' name='KPI 3 Share of people Vaccinated Wordwide' w='29151' x='62449' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33249' id='3' is-fixed='true' name='Vacc vs Fully Vacc per Location' w='91200' x='400' y='20625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5500' id='8' name='Vacc vs Fully Vacc per Location' pane-specification-id='1' param='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' type='color' w='8000' x='91600' y='8417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='22728' id='9' is-fixed='true' name='Vaccination per Hundred - Map' w='91200' x='400' y='53874'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='22731' id='11' is-fixed='true' name='Vaccinated over GDP' w='91200' x='400' y='76602'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{81F00EE4-109F-4ADD-B24A-1D17D90590B5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI 1 People Fully Vaccinated'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[Parameters].[Parameter 2]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[Parameters].[Parameter 2]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Calculation_1769633179274764288:nk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Continent:nk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (copy):nk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:People Fully Vaccinated (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E93394D0-0065-4A56-8352-78F52364999A}' />
+    </window>
+    <window class='worksheet' name='KPI 2 People Partially Vaccinated (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:People Fully Vaccinated (bin):qk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[tdy:Date:qk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[tmn:Date:qk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[tyr:Date:ok]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BAE68F90-8BBC-4EA0-A1FA-A818E558451D}' />
+    </window>
+    <window class='worksheet' name='KPI 3 Share of people Vaccinated Wordwide'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F4F4334C-4D2E-405D-86FE-1F5463958518}' />
+    </window>
+    <window class='worksheet' name='Vacc vs Fully Vacc per Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B17A0B8-482A-4DD8-906A-B1B9767B6223}' />
+    </window>
+    <window class='worksheet' name='Vaccination per Hundred - Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[max:People Vaccinated:qk]</field>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location (geo):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D4F51C5-D4AE-4C9B-BFBA-E79818280640}' />
+    </window>
+    <window class='worksheet' name='Vaccinated over GDP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10x6of515xv8o71f4pu5p0mn662t].[none:Location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{89BDC561-5BE9-4D4F-9A7E-C827B0428C68}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='KPI 1 People Fully Vaccinated'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 2 People Partially Vaccinated (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 3 Share of people Vaccinated Wordwide'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Vacc vs Fully Vacc per Location'>
+          <highlight field='[federated.10x6of515xv8o71f4pu5p0mn662t].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Vaccinated over GDP'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Vaccination per Hundred - Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{8EFF1597-A63D-410B-A82A-CE8B3C93DC9C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Dashboard 5' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
